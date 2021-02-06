@@ -1,0 +1,13 @@
+<div>
+    <ul>
+        {{#each data.body.items}}    
+            <li> 
+                {{this.name}}
+                {{!-- {{#if this.images.0.url}}
+                    <img src="{{this.images.0.url}}" alt="photo">
+                {{/if}}
+                <a href="/tracks/{{this.id}}">view tracks</a>
+            </li> --}}
+        {{/each}}
+    </ul>
+</div>

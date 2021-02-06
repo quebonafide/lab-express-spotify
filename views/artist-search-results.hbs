@@ -1,0 +1,13 @@
+<div>
+    <ul>
+        {{#each data.body.artists.items}}    
+            <li> 
+                {{this.name}}
+                {{#if this.images.2.url}}
+                    <img src="{{this.images.2.url}}" alt="photo">
+                {{/if}}
+            </li>
+            <a href="/albums/{{this.id}}">view albums</a>
+        {{/each}}
+    </ul>
+</div>
